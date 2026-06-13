@@ -1,0 +1,19 @@
+body {
+    background-color:beige; 
+    font-family: 'Times New Roman', Times, serif
+}
+
+#main-title {
+    text-align: center;
+    font-family: cursive;
+    font-weight: lighter;
+}
+
+#options-list {
+    text-align: center;
+}
+
+#add-new {
+    text-align: right;
+}
+

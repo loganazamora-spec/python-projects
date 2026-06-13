@@ -1,0 +1,15 @@
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 12;
+  background-color: aqua;
+}
+
+
+.paragraph-titles {
+  color: white;
+  font-family: cursive;
+}
+
+.lists {
+ font-family: cursive; 
+}
