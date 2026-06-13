@@ -12,4 +12,3 @@ input_prompt = ("What day is it today? ")
 
 print(f"Today you are: {my_schedule[input(input_prompt).strip().lower()]}")
 
-#this is a test
