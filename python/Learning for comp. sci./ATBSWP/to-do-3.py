@@ -23,7 +23,7 @@ def main_screen():
 
 def add():
     def confirmation():
-        confirmation_prompt = input(f"Would you like to add the following task to your to do list {new_task}? [1] Yes [2] No ")
+        confirmation_prompt = input(f"Would you like to add the following task to your to do list: '{new_task}'? [1] Yes [2] No ")
 
         if confirmation_prompt.strip().lower() in ["yes", "1"]:
             tasks.append(new_task)
