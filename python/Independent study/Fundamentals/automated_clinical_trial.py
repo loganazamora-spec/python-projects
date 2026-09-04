@@ -26,18 +26,14 @@ while current_week < 8:
         treatment_group = data["treatment_group"]
         score_patient = data["weekly_scores"]
         
-        
-        # Producing random test scores
-
-        test_score_drug = random.randint(score_patient[-1]-1, score_patient[-1]+3)
-        test_score_placebo = random.randint(score_patient[-1]-3, score_patient[-1]+1)
-
 
         # Adding test scores to list
         if treatment_group == "drug":
+            test_score_drug = random.randint(score_patient[-1]-1, score_patient[-1]+3)
             score_patient.append(test_score_drug)
             weekly_score_drug.append(test_score_drug)
         else:
+            test_score_placebo = random.randint(score_patient[-1]-3, score_patient[-1]+1)
             # If a patient experiences a severe cognitive drop and their weekly test score falls below 40, 
             # they must be immediately withdrawn from the trial to receive emergency care  
             if test_score_placebo < 40:
